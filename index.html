@@ -1,9 +1,269 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Jim Cresswell</title>
-</head>
-<body>
-	<h1>Hello everyone</h1>
-</body>
+<!--
+	 * viewport width limits greater than window width in px:  ff15 442, ffnighly17 406,
+-->
+<html id="html">
+	<head>
+		<title>Jim Cresswell</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+		<meta name="description" content="Jim Cresswell is an HTML5 and JavaScript app developer and physical scientist. Scientific papers published as James G Cresswell.">
+		<link rel="canonical" href="http://jimcresswell.net/" />
+		<link rel="icon" href="http://jimcresswell.net/favicon.ico" />
+		<style type="text/css">
+			body, div, span, a {
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			html {
+				height: 100%;
+				width: 100%;
+			}
+			body {
+				width: 100%;
+				height: 100%;
+				background-color: black;
+				font-size: 8pt;
+			}
+			a {
+				text-decoration: none;
+				color: #CCC;
+				margin: 0 3px;
+			}
+			span {
+				display: inline-block;
+			}
+			#me {
+				position: relative;
+				text-align: center;
+				top: 14%;
+				margin: 0 auto;
+				color: #CCC;
+			}
+			#me .mainlink {
+				padding-top: 12px;
+			}
+			#me .mainlink span {
+				font-size: 4.5em;
+				font-weight: bold;
+			}
+			#me .description {
+				max-width: 480px;
+				font-size: 2.5em;
+				margin: 30px auto;
+				padding: 0 12px;
+			}
+			#me .description span {
+				font-size: inherit;
+			}
+			@media all and (max-width: 550px) {
+				#me { top: 12%; }
+				.mainlink span { letter-spacing: -2px }
+				#s0 {
+					-webkit-transform: rotate(10deg);
+					-moz-transform: rotate(10deg);
+					-o-transform: rotate(10deg);
+					-ms-transform: rotate(10deg);
+					transform: rotate(10deg);
+				}
+				#s1 {
+					-webkit-transform: rotate(-30deg);
+					-moz-transform: rotate(-30deg);
+					-o-transform: rotate(-30deg);
+					-ms-transform: rotate(-30deg);
+					transform: rotate(-30deg);
+				}
+			}
+			@media all and (max-width: 510px) {
+				#me { top: 11%; }
+				.mainlink span { letter-spacing: -3px; }
+				#s11 {
+					-webkit-transform: rotate(-15deg);
+					-moz-transform: rotate(-15deg);
+					-o-transform: rotate(-15deg);
+					-ms-transform: rotate(-15deg);
+					transform: rotate(-15deg);
+				}
+			}
+			@media all and (max-width: 480px) {
+				#me { top: 10%; }
+				.mainlink span { letter-spacing: -4px; }
+				#s6 {
+					-webkit-transform: rotate(20deg);
+					-moz-transform: rotate(20deg);
+					-o-transform: rotate(20deg);
+					-ms-transform: rotate(20deg);
+					transform: rotate(20deg);
+				}
+			}
+			@media all and (max-width: 460px) {
+				#me { top: 9%; }
+				#s4 {
+					-webkit-transform: rotate(10deg);
+					-moz-transform: rotate(10deg);
+					-o-transform: rotate(10deg);
+					-ms-transform: rotate(10deg);
+					transform: rotate(10deg);
+				}
+				#s5 {
+					-webkit-transform: rotate(-8deg);
+					-moz-transform: rotate(-8deg);
+					-o-transform: rotate(-8deg);
+					-ms-transform: rotate(-8deg);
+					transform: rotate(-8deg);
+				}
+			}
+			@media all and (max-width: 450px) {
+				#me { top: 8%; }
+				.mainlink span { letter-spacing: -5px; }
+				#s9 {
+					-webkit-transform: rotate(8deg);
+					-moz-transform: rotate(8deg);
+					-o-transform: rotate(8deg);
+					-ms-transform: rotate(8deg);
+					transform: rotate(8deg);
+				}
+			}
+			@media all and (max-width: 445px) {
+				#me { top: 7%; }
+				#s3 {
+					-webkit-transform: rotate(8deg);
+					-moz-transform: rotate(8deg);
+					-o-transform: rotate(8deg);
+					-ms-transform: rotate(8deg);
+					transform: rotate(8deg);
+				}
+				#s9 {
+					-webkit-transform: rotate(-10deg);
+					-moz-transform: rotate(-10deg);
+					-o-transform: rotate(-10deg);
+					-ms-transform: rotate(-10deg);
+					transform: rotate(-10deg);
+				}
+			}
+			@media all and (max-width: 440px) {
+				#me { top: 6%; }
+				.mainlink span { letter-spacing: -7px; }
+				#s4 {
+					-webkit-transform: rotate(-12deg);
+					-moz-transform: rotate(-12deg);
+					-o-transform: rotate(-12deg);
+					-ms-transform: rotate(-12deg);
+					transform: rotate(-12deg);
+				}
+			}
+			@media all and (max-width: 430px) {
+				#me { top: 4%; }
+				#s4 {
+					-webkit-transform: rotate(-6deg);
+					-moz-transform: rotate(-6deg);
+					-o-transform: rotate(-6deg);
+					-ms-transform: rotate(-6deg);
+					transform: rotate(-6deg);
+				}
+			}
+			@media all and (max-width: 400px) {
+				#me { top: 2%; }
+				.mainlink span { letter-spacing: -8px; }
+				#s4 {
+					-webkit-transform: rotate(-2deg) translate(0, -7px);
+					-moz-transform: rotate(-2deg) translate(0, -7px);
+					-o-transform: rotate(-2deg) translate(0, -7px);
+					-ms-transform: rotate(-2deg) translate(0, -7px);
+					transform: rotate(-2deg) translate(0, -7px);
+				}
+			}
+			@media all and (max-height: 380px) {
+				#me { top: 0; }
+			}
+			@media all and (max-height: 380px) and (min-width: 730px) {
+				#me {
+					width: 80%;
+					text-align: left;
+				}
+				#me .mainlink, #me .description {
+					margin: 0;
+					padding-top: 12px;
+					padding-right: 20px;
+				}
+				#me .mainlink {
+					float: left;
+				}
+				#me .description {
+					max-width: none;
+					text-align: left;
+				}
+			}
+			@media all and (max-height: 380px) and (min-width: 1060px) {
+				#me {
+					width: 1060px;
+					overflow: hidden;
+					text-align: center;
+				}
+				#me .mainlink, #me .description {
+					float: left;
+					padding-top: 12px;
+					padding-right: 20px;
+					margin: 0;
+				}
+				#me .description {
+					max-width: 650px;
+					text-align: left;
+				}
+			}
+			#externallinks {
+				display: none;
+				position: absolute;
+				top: 0;
+			}
+			#externallinks ul {
+				list-style: none;
+				display: inline-block;
+			}
+			#externallinks ul a {
+				color: black;
+			}
+			@media all and (max-height: 380px) and (max-width: 729px) {
+				#me .description {
+					display: none;
+				}
+				.mainlink span {
+					letter-spacing: 0;
+				}
+				#s0, #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10, #s11, #s12 {
+					-webkit-transform: none;
+					-moz-transform: none;
+					-o-transform: none;
+					-ms-transform: none;
+					transform: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="me">
+			<div class="mainlink">
+				<a href="https://en.twitter.com/JimCresswell">
+				<span id="s0">@</span><span id="s1">J</span><span id="s2">i</span><span id="s3">m</span><span id="s4">C</span><span id="s5">r</span><span id="s6">e</span><span id="s7">s</span><span id="s8">s</span><span id="s9">w</span><span id="s10">e</span><span id="s11">l</span><span id="s12">l</span>
+				</a>
+			</div>
+			<div class="description" itemscope itemtype="http://data-vocabulary.org/Person">
+				My name is <span itemprop="name">Jim Cresswell</span>. I am an <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/">HTML5</a> and <a href="https://developer.mozilla.org/en/JavaScript/">JavaScript</a> app <span itemprop="role">developer</span>. I work at <a href="http://labs.ft.com"><span itemprop="affiliation">FT Labs</span></a>. I am also a <a href="http://en.wikipedia.org/wiki/Physical_science">physical scientist</a> with a background in <a href="http://en.wikipedia.org/wiki/Physical_cosmology">statistical cosmology</a> and <a href="http://en.wikipedia.org/wiki/Astrophysics">astrophysics</a>. My <a href="http://arxiv.org/find/astro-ph/1/au:+Cresswell_J/0/1/0/all/0/1">scientific papers</a> are published under the name <span itemprop="name">James G. Cresswell</span>.
+			</div>
+		</div>
+		<div id="externallinks">
+			<div id="misc">
+				<div class="title">External Links</div>
+				<ul>
+					<li><a href="https://plus.google.com/107813750943547987996?rel=author">Google</a></li>
+					<li><a href="https://www.linkedin.com/pub/jim-cresswell/44/524/b9b">LinkedIn</a></li>
+					<li><a href="http://labs.ft.com">FT Labs</a></li>
+					<li><a href="http://arxiv.org/find/astro-ph/1/au:+Cresswell_J/0/1/0/all/0/1">arXiv</a></li>
+					<li><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?db_key=AST&db_key=PRE&qform=AST&arxiv_sel=astro-ph&arxiv_sel=cond-mat&arxiv_sel=cs&arxiv_sel=gr-qc&arxiv_sel=hep-ex&arxiv_sel=hep-lat&arxiv_sel=hep-ph&arxiv_sel=hep-th&arxiv_sel=math&arxiv_sel=math-ph&arxiv_sel=nlin&arxiv_sel=nucl-ex&arxiv_sel=nucl-th&arxiv_sel=physics&arxiv_sel=quant-ph&arxiv_sel=q-bio&sim_query=YES&ned_query=YES&adsobj_query=YES&aut_logic=OR&obj_logic=OR&author=Cresswell%2C+James+G&object=&start_mon=&start_year=&end_mon=&end_year=&ttl_logic=OR&title=&txt_logic=OR&text=&nr_to_return=200&start_nr=1&jou_pick=ALL&ref_stems=&data_and=ALL&group_and=ALL&start_entry_day=&start_entry_mon=&start_entry_year=&end_entry_day=&end_entry_mon=&end_entry_year=&min_score=&sort=SCORE&data_type=SHORT&aut_syn=YES&ttl_syn=YES&txt_syn=YES&aut_wt=1.0&obj_wt=1.0&ttl_wt=0.3&txt_wt=3.0&aut_wgt=YES&obj_wgt=YES&ttl_wgt=YES&txt_wgt=YES&ttl_sco=YES&txt_sco=YES&version=1">NASA ADS</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>
