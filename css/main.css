@@ -22,6 +22,11 @@ a {
 span {
     display: inline-block;
 }
+.nodisplay {
+    display: none;
+    position: absolute;
+    top: 0;
+}
 #me {
     position: relative;
     text-align: center;
@@ -203,9 +208,4 @@ span {
         max-width: 650px;
         text-align: left;
     }
-}
-#gpluslink {
-    display: none;
-    position: absolute;
-    top: 0;
 }
