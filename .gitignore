@@ -1,4 +1,8 @@
-ompiled source #
+# IDE config #
+##############
+*.vscode
+
+# Compiled source #
 ###################
 *.com
 *.class
@@ -40,4 +44,5 @@ Thumbs.db
 #Vim
 *.swp
 
-
+#Dependencies
+node_modules/
